@@ -1,0 +1,255 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  padding: 1rem;
+}
+
+/* Counter Styles */
+.counter {
+  text-align: center;
+  padding: 2rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.step-control {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Todo List Styles */
+.todo-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.todo-list form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.todo-list input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.todo-list ul {
+  list-style: none;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+  padding: 2rem;
+  text-align: center;
+}
+
+.theme-toggle.dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+/* Shopping Cart Styles */
+.shopping-cart {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cart-items {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cart-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Auth Styles */
+.auth {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.auth form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth input {
+  padding: 0.5rem;
+}
+
+/* User List Styles */
+.user-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.user-list ul {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.user-list li {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* Calculator Styles */
+.calculator {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inputs div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Event Manager Styles */
+.event-manager {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-manager form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.events-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.event {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.event-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Button Styles */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Input Styles */
+input,
+textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
